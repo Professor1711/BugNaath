@@ -1,0 +1,6 @@
+requests
+argparse
+concurrent-log-handler
+tldextract
+urllib3
+colorama
