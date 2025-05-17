@@ -4,59 +4,61 @@ BugNaath is a powerful, real-world P4/P5-level vulnerability scanner built for e
 
 ---
 
-## 🔍 Features
+## 🔗 GitHub Repository
 
-- ✅ Smart Payload Injection (SQLi, XSS, etc.)
-- ✅ Deep Vulnerability Scanning (`--deep` flag)
-- ✅ Sensitive File Detection (`.env`, `phpinfo.php`, `config.php`, etc.)
-- ✅ Security Misconfiguration Detection (Missing Headers, Open Directories)
-- ✅ Rate Limiting & Origin IP Exposure Detection
-- ✅ Subdomain Takeover Heuristic Warnings
-- ✅ RCE, SSRF, SSTI, XXE - Warning-based Deep Tests
-- ✅ Auto URL Parameter Extraction
-- ✅ Multithreaded Scanning Support
-- ✅ Clean CLI Output + Optional File Output
-- ✅ Single URL or Bulk URL Scanning from File
+**Clone this repo**  
+git clone https://github.com/Professor1711/BugNaath.git
+cd BugNaath
 
----
+⚙️ Installation
+Make sure you have Python 3.9+ installed.
+Install all dependencies using:
+pip install -r requirements.txt
 
-## 🚀 Usage
+🚀 Usage
+▶️ Scan a Single URL
+python3 bugnaath.py -u "https://example.com/page.php?id=123" --deep
 
-### 🔗 Scan a Single URL
-```bash
-python3 bugnaath.py -u https://target.com/page.php?id=123
-🧠 Deep Scan for All Vulnerabilities
-python3 bugnaath.py -u https://target.com/page.php?id=123 --deep
-📁 Scan URLs in Bulk
+▶️ Scan Multiple URLs from a File
 python3 bugnaath.py --list targets.txt --deep
-💾 Save Output to File
-python3 bugnaath.py -u https://target.com --deep -o report.txt
-⚙️ Command-Line Options
-Flag	Description
--u / --url	Target URL to scan
---list	    Path to file with list of target URLs
---deep	    Enable deep scan (includes IDOR, SSRF, etc.)
--o	        Save results to file
--t	        Request timeout in seconds (default: 10)
---threads	  Number of concurrent threads (default: 5)
 
-🧪 Sample Output
-[*] Scanning: https://target.com/page.php?id=2
-- Missing Header: Content-Security-Policy
+▶️ Save Results to a File
+python3 bugnaath.py -u "https://example.com" --deep -o results.txt
+
+▶️ Set Timeout and Threads
+python3 bugnaath.py --list targets.txt --deep -t 10 --threads 10
+
+
+🧠 Features
+🔍 Deep vulnerability scanning with real payload injection
+🧬 SQLi detection (error-based, reflected payloads)
+✳️ XSS detection
+🛑 Missing Security Headers detection
+🔓 Sensitive file exposure detection (.env, phpinfo.php, etc.)
+🔐 IDOR, CSRF, SSRF, XXE, SSTI (warning-based)
+🌐 Subdomain Takeover detection (warning-based)
+📊 CLI-based real-time results and optional file output
+🧠 Smart parameter parsing and payload mapping
+
+📥 Output Sample
+[*] Scanning: https://example.com/page.php?id=123
 - Missing Header: X-Frame-Options
-- Possible SQLi: https://target.com/page.php?id='
-- Possible XSS: https://target.com/page.php?id=<script>alert(1)</script>
-- Possible IDOR: https://target.com/page.php?id=2
-- Sensitive File Found: https://target.com/.env
-- Potential Subdomain Takeover: unresolvable.test.target.com
-- Rate Limiting Possible: Try flooding same endpoint
-- Origin IP Exposure: Server leaked internal IP 10.0.0.1
+- Possible SQLi: https://example.com/page.php?id='
+- Possible XSS: https://example.com/page.php?id=<script>alert(1)</script>
+- Sensitive file exposed: https://example.com/.env
+- Potential CSRF (no CSRF tokens detected)
+- Subdomain takeover: Check DNS + 404 response patterns
 
-⚠️ Legal Disclaimer
-This tool is intended only for educational purposes and for use in authorized environments.
-Do NOT scan any website without proper legal permission. Unauthorized use may be illegal.
+📁 Folder Structure
+BugNaath/
+├── bugnaath.py          # Main scanner file
+├── requirements.txt     # Required Python packages
+├── README.md            # This file
+└── targets.txt          # Optional - list of URLs to scan
 
-👨‍💻 Author
-Virendra Leelawat
-Tagline: Search Hunter | BugNaath
-Tool written in Python 3.9+ with ❤️
+⚠️ Disclaimer
+This tool is for educational and authorized testing purposes only. Do not use it against any target without proper permission. The author is not responsible for any misuse or damage caused.
+
+💬 Credits
+Created with 💻 by Virendra Leelawat
+Tool name: BugNaath – “Search Hunter”
