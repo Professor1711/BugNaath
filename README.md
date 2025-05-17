@@ -4,23 +4,23 @@ BugNaath is a powerful, real-world P4/P5-level vulnerability scanner built for e
 
 ---
 
-⚠️ Disclaimer :
+## ⚠️ Disclaimer :
 
 This tool is for educational and authorized testing purposes only. Do not use it against any target without proper permission. The author is not responsible for any misuse or damage caused.
 
 
-## 🔗 GitHub Repository
+## 🔗 GitHub Repository :
 ```bash
 git clone https://github.com/Professor1711/BugNaath.git
 cd BugNaath
 ```
-⚙️ Installation
+## ⚙️ Installation :
 Make sure you have Python 3.9+ installed.
 Install all dependencies using:
 ```
 pip install -r requirements.txt
 ```
-🚀 Usage :-
+## 🚀 Usage :
 ▶️ Scan a Single URL
 ```
 python3 bugnaath.py -u "https://example.com/page.php?id=123" --deep
@@ -48,7 +48,7 @@ python3 bugnaath.py --list targets.txt --deep -t 10 --threads 10
 - Potential CSRF (no CSRF tokens detected)
 - Subdomain takeover: Check DNS + 404 response patterns
 ```
-🧠 Features
+## 🧠 Features :
 
 🔍 Deep vulnerability scanning with real payload injection
 
@@ -77,9 +77,8 @@ BugNaath/
 ├── README.md            # This file
 └── targets.txt          # Optional - list of URLs to scan
 ```
-💬 Credits
-Created with 💻 
+## 💬 Created with 💻 
 
-by Virendra Leelawat
+by Virendra Kumar Leelawat
 
 Tool name: BugNaath – “Search Hunter”
