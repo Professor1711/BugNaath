@@ -2,6 +2,8 @@
 
 BugNaath is a powerful, real-world P4/P5-level vulnerability scanner built for ethical hackers and bug bounty hunters. It performs deep scanning to detect common low to medium severity issues that are often overlooked — like XSS, SQLi, IDOR, CSRF, Sensitive Files, Rate Limiting, Subdomain Takeover, and more.
 
+---
+
 🧠 Features
 🔍 Deep vulnerability scanning with real payload injection
 🧬 SQLi detection (error-based, reflected payloads)
@@ -13,8 +15,6 @@ BugNaath is a powerful, real-world P4/P5-level vulnerability scanner built for e
 📊 CLI-based real-time results and optional file output
 🧠 Smart parameter parsing and payload mapping
 
-
----
 
 ## 🔗 GitHub Repository
 ```bash
