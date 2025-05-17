@@ -68,6 +68,7 @@ python3 bugnaath.py --list targets.txt --deep -t 10 --threads 10
 
 🧠 Smart parameter parsing and payload mapping
 
+
 📁 Folder Structure
 ```
 BugNaath/
@@ -78,5 +79,7 @@ BugNaath/
 ```
 💬 Credits
 Created with 💻 
+
 by Virendra Leelawat
+
 Tool name: BugNaath – “Search Hunter”
