@@ -6,7 +6,9 @@ BugNaath is a powerful, real-world P4/P5-level vulnerability scanner built for e
 
 🧠 Features
 🔍 Deep vulnerability scanning with real payload injection
+
 🧬 SQLi detection (error-based, reflected payloads)
+
 ✳️ XSS detection
 🛑 Missing Security Headers detection
 🔓 Sensitive file exposure detection (.env, phpinfo.php, etc.)
