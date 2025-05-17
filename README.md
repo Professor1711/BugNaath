@@ -4,6 +4,9 @@ BugNaath is a powerful, real-world P4/P5-level vulnerability scanner built for e
 
 ---
 
+⚠️ Disclaimer
+This tool is for educational and authorized testing purposes only. Do not use it against any target without proper permission. The author is not responsible for any misuse or damage caused.
+
 🧠 Features
 
 🔍 Deep vulnerability scanning with real payload injection
@@ -65,9 +68,6 @@ BugNaath/
 ├── README.md            # This file
 └── targets.txt          # Optional - list of URLs to scan
 
-
-⚠️ Disclaimer
-This tool is for educational and authorized testing purposes only. Do not use it against any target without proper permission. The author is not responsible for any misuse or damage caused.
 
 💬 Credits
 Created with 💻 by Virendra Leelawat
