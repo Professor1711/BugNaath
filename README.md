@@ -2,6 +2,18 @@
 
 BugNaath is a powerful, real-world P4/P5-level vulnerability scanner built for ethical hackers and bug bounty hunters. It performs deep scanning to detect common low to medium severity issues that are often overlooked — like XSS, SQLi, IDOR, CSRF, Sensitive Files, Rate Limiting, Subdomain Takeover, and more.
 
+🧠 Features
+🔍 Deep vulnerability scanning with real payload injection
+🧬 SQLi detection (error-based, reflected payloads)
+✳️ XSS detection
+🛑 Missing Security Headers detection
+🔓 Sensitive file exposure detection (.env, phpinfo.php, etc.)
+🔐 IDOR, CSRF, SSRF, XXE, SSTI (warning-based)
+🌐 Subdomain Takeover detection (warning-based)
+📊 CLI-based real-time results and optional file output
+🧠 Smart parameter parsing and payload mapping
+
+
 ---
 
 ## 🔗 GitHub Repository
@@ -27,16 +39,6 @@ python3 bugnaath.py -u "https://example.com" --deep -o results.txt
 ▶️ Set Timeout and Threads
 python3 bugnaath.py --list targets.txt --deep -t 10 --threads 10
 
-🧠 Features
-🔍 Deep vulnerability scanning with real payload injection
-🧬 SQLi detection (error-based, reflected payloads)
-✳️ XSS detection
-🛑 Missing Security Headers detection
-🔓 Sensitive file exposure detection (.env, phpinfo.php, etc.)
-🔐 IDOR, CSRF, SSRF, XXE, SSTI (warning-based)
-🌐 Subdomain Takeover detection (warning-based)
-📊 CLI-based real-time results and optional file output
-🧠 Smart parameter parsing and payload mapping
 
 📥 Output Sample
 [*] Scanning: https://example.com/page.php?id=123
