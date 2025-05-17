@@ -5,7 +5,7 @@ BugNaath is a powerful, real-world P4/P5-level vulnerability scanner built for e
 ---
 
 ## 🔗 GitHub Repository
-
+```bash
 git clone https://github.com/Professor1711/BugNaath.git
 cd BugNaath
 
@@ -46,6 +46,7 @@ python3 bugnaath.py --list targets.txt --deep -t 10 --threads 10
 - Sensitive file exposed: https://example.com/.env
 - Potential CSRF (no CSRF tokens detected)
 - Subdomain takeover: Check DNS + 404 response patterns
+
 📁 Folder Structure
 BugNaath/
 ├── bugnaath.py          # Main scanner file
