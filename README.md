@@ -19,6 +19,7 @@ Make sure you have Python 3.9+ installed.
 Install all dependencies using:
 ```
 pip install -r requirements.txt
+pip install --upgrade requests urllib3
 ```
 ## 🚀 Usage :
 ▶️ Scan a Single URL
